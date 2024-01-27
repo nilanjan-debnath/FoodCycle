@@ -7,7 +7,7 @@ nav ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  background: yellow;
+  background: rgb(115, 199, 255);
   align-items: center;
   height: 3rem;
 }
@@ -15,13 +15,20 @@ nav ul li a{
   text-decoration: none;
   font-size: 1.2rem;
 }
-#menu{
+
+#menu, #cross{
   font-size: 1.5rem;
   position: fixed;
   top: 8px;
-  left: 8px;
+  right: 8px;
   border: none;
-  background: yellow;
+  background: transparent;
+  transition: 0.25s;
+}
+#cross{
+  top: 5px;
+  right: 7px;
+  font-size: 1.8rem;
 }
 nav{
   position: absolute;
