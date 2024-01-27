@@ -1,3 +1,308 @@
-h3{
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#navbar {
+    height: 100vh;
+    background: white;
+    width: 11rem;
+    padding: 2rem 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.75s ease-in-out;
+}
+
+.open {
+    left: 0%;
+}
+
+#navbar h1 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    list-style: none;
+    height: 75vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar ul li {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#navbar ul li:hover,
+#navbar ul li.active {
+    background: rgb(229, 204, 204);
+}
+
+#close {
+    width: 100%;
+    height: 10vh;
+    font-size: 1.4rem;
+    padding-left: 1.7rem;
+    border: none;
+}
+
+i {
+    margin-left: 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.dashboard {
+    padding: 0 0 0 4.6rem;
+    display: flex;
+}
+
+.box1 {
+    width: 20vw;
+    background: white;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.box2 {
+    width: 50vw;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background: #EEF5FF;
+}
+
+.box3 {
+    width: 30vw;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 .image {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding-left: 1rem;
+}
+
+.box1 .image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.name h1 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.name p,
+.text p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #dd9797;
+    margin-top: 6px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.text h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+#foodLogo {
+    margin-left: 0;
+}
+
+.donationBox {
+    margin-top: 2rem;
+}
+
+.donationBox .food,
+.donationBox .money {
+    background: #f0f2fa;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.donationBox .food h1,
+.donationBox .money h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.donationBox .food .info,
+.donationBox .money .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.info h5 {
+    font-weight: 500;
+}
+
+.box2 h1,
+.box3 h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.graph {
+    width: 200px;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.topBox {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0 3rem 0;
+    justify-content: center;
+}
+
+#headingText {
+    font-size: 1.5rem;
+}
+
+.leftBox,
+.rightBox {
+    padding: 1rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.rightBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rightBox .count {
+    background: #7360DF;
+    height: 7rem;
+    padding: 1rem;
+    border-radius: 14px;
+    color: white;
+}
+
+.rightBox .count h3 {
+    margin-bottom: 10px;
+}
+
+.details {
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.showDetails {
+    background: #DCF2F1;
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #365486;
+    transition: 0.5s;
+}
+
+.showDetails p{
+    transition: 0.2s;
+}
+summary {
+    display: flex;
+}
+
+details[open]>summary+* {
+    animation: unfold 0.1s ease-in-out;
+}
+
+#nameDe {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+@keyframes unfold {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+
+    to {
+        opacity: 1;
+        height: auto;
+    }
+}
+
+#btnBox {
+    display: flex;
+    gap: 20px;
+}
+
+#nameDe h3,
+.showDetails .row h3 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.showDetails .row {
+    display: flex;
+    gap: 15px;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+#spanBtn {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+}
+
+.box3 .leftBox {
+    width: 17rem;
+    background: #f0f2fa;
+}
+
+.box3 .rightBox {
+    width: 21rem;
+    background: #f0f2fa;
 }
