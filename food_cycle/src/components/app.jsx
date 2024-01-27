@@ -9,10 +9,8 @@ export function App() {
 
     return (
         <Router>
-            <div>
                 <Header />
                 {/* Rest of your content */}
-            </div>
         </Router>
     );
 }

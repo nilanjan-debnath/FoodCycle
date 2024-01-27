@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
+import React, {useState} from "react";
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 import Activities from './Activities';
 import Payments from './Payment';
@@ -10,46 +10,39 @@ import AdminDashBoard from './AdminDash';
 import Home from "./Home";
 
 function Header() {
-    const [hideNavBar, setHideNavBar] = useState(false);
-    const navigate = useNavigate();
-
-    const handleNavigationClick = () => {
-        // Hide the navigation bar for any navigation button click
-        setHideNavBar(true);
-    };
-    function showNav() {
-        setHideNavBar(false);
+    const [nav, setNav] = useState(false);
+    function handleNav() {
+        setNav(!nav);
     }
 
     return (
         <>
-            {!hideNavBar && (
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/" onClick={showNav}>Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/adminDas" onClick={handleNavigationClick}>AdminDash</Link>
-                        </li>
-                        <li>
-                            <Link to="/login" onClick={handleNavigationClick}>Login</Link>
-                        </li>
-                        <li>
-                            <Link to="/feedBack" onClick={handleNavigationClick}>Feedback</Link>
-                        </li>
-                        <li>
-                            <Link to="/payment" onClick={handleNavigationClick}>Payment</Link>
-                        </li>
-                        <li>
-                            <Link to="/progress" onClick={handleNavigationClick}>Progress</Link>
-                        </li>
-                        <li>
-                            <Link to="/activities" onClick={handleNavigationClick}>Activities</Link>
-                        </li>
-                    </ul>
-                </nav>
-            )}
+            <nav style={nav === true ? {top: "0%"}:{top: "-12%"}}>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/adminDas" >AdminDash</Link>
+                    </li>
+                    <li>
+                        <Link to="/login" >Login</Link>
+                    </li>
+                    <li>
+                        <Link to="/feedBack" >Feedback</Link>
+                    </li>
+                    <li>
+                        <Link to="/payment" >Payment</Link>
+                    </li>
+                    <li>
+                        <Link to="/progress" >Progress</Link>
+                    </li>
+                    <li>
+                        <Link to="/activities" >Activities</Link>
+                    </li>
+                </ul>
+                <button id="menu" onClick={handleNav}><i className="fa-solid fa-bars"></i></button>
+            </nav>
 
             <Routes>
                 <Route path="/" element={<Home />} />
