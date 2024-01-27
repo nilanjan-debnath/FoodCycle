@@ -41,7 +41,8 @@ function Header() {
                         <Link to="/activities" >Activities</Link>
                     </li>
                 </ul>
-                <button id="menu" onClick={handleNav}><i className="fa-solid fa-bars"></i></button>
+                <button id="menu" style={nav === true ? {opacity: "0"}:{opacity: "1"}} onClick={handleNav}><i className="fa-solid fa-bars"></i></button>
+                <button id="cross" style={nav === true ? {opacity: "1"}:{opacity: "0"}} onClick={handleNav}><i class="fa-solid fa-xmark"></i></button>
             </nav>
 
             <Routes>
