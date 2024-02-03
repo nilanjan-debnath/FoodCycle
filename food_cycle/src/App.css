@@ -35,3 +35,8 @@ nav{
   left: 0;
   transition: 0.5s;
 }
+.feedback-container{
+  margin: auto;
+  border-width: 2px;
+  border-color: black;
+}
