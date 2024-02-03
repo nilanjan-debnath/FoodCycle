@@ -72,6 +72,12 @@ function FeedBack() {
                 <option value="Others">Others</option>
               </select>
             </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="Check" />
+              <label className="form-check-label" for="Check">
+                Would you like to join out initiative?
+              </label>
+            </div>
             <div class="mb-3">
               <label for="Review" class="form-label">
                 Please tell us about our service
