@@ -1,3 +1,22 @@
-.heading{
-  text-align: center;
+.pay_container{
+  margin: auto;
+}
+.personal{
+  display: flex;
+  margin-top: 20px;
+}
+.inpLast{
+  margin-left: 10px;
+  border-radius: 15px 0px 15px 15px;
+  width: 378px;
+}
+.inpFirst{
+  border-radius: 15px 0px 15px 15px;
+  width: 378px;
+}
+.inp_email{
+  border-radius: 15px 0px 15px 15px;
+}
+.inp_cardno{
+  border-radius: 15px 0px 15px 15px;
 }
