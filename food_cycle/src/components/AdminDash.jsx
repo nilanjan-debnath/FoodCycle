@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../../public/styleSheets/admin.css";
 import profileImg from "../../public/images/profile.jpg"
-// add this line to connect css inside style sheet.
+
+
+function handleDetails(id) {
+    document.getElementById(id).open = !document.getElementById(id).open;
+};
 
 function handleDetails(id) {
     document.getElementById(id).open = !document.getElementById(id).open;
@@ -9,10 +13,6 @@ function handleDetails(id) {
 
 function AdminDashBoard() {
 
-    const [sideNav, setSideNav] = useState(true);
-    function handleSideNav() {
-        setSideNav(!sideNav);
-    }
 
     useEffect(() => {
         const initCharts = () => {
@@ -66,46 +66,47 @@ function AdminDashBoard() {
         const initCharts = () => {
             const ctx1 = document.getElementById("barchart1").getContext('2d');
 
-const labels1 = [
-    'People',
-  'Organisation',
-];
+            const labels1 = [
+                'People',
+                'Organisation',
+            ];
 
-const data1 = {
-    labels: labels1,
-    datasets: [{
-      label: 'Money',
-      data: [60, 40],
-      backgroundColor: [
-        '#1D2B53',
-        '#4942E4',
-      ],
-      borderColor: [
-        'white',
-      ],
-      borderWidth: 1,
-      borderSkipped: 'bottom',
-    }]
-};
+            const data1 = {
+                labels: labels1,
+                datasets: [{
+                    label: 'Money',
+                    data: [60, 40],
+                    backgroundColor: [
+                        '#1D2B53',
+                        '#4942E4',
+                    ],
+                    borderColor: [
+                        'white',
+                    ],
+                    borderWidth: 1,
+                    borderSkipped: 'bottom',
+                }]
+            };
 
-const config1 = {
-    type: 'doughnut',
-    data: data1,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-          ticks: {
-            callback: function(value, index, values) {
-              return value*100 + '%'; // Append 'm' to the tick label
-            }
-          }
-        }
-      }
-    },
-  };
+            const config1 = {
+                type: 'doughnut',
+                data: data1,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function (value, index, values) {
+                                    return value * 100 + '%'; // Append 'm' to the tick label
+                                }
+                            }
+                        }
+                    }
+                },
+            };
 
-const myChart1 = new Chart(ctx1, config1);
+            const myChart1 = new Chart(ctx1, config1);
+
         };
 
         initCharts();
@@ -113,19 +114,6 @@ const myChart1 = new Chart(ctx1, config1);
 
     return (
         <>
-            <div id="navbar" style={sideNav === true ? { left: "-7%" } : { left: "0%" }}>
-                <h1>Food <i class="fa-solid fa-cart-shopping"></i></h1>
-                <ul>
-                    <li className="active">Dashboard <i className="fa-regular fa-clipboard"></i></li>
-                    <li>Donations <i className="fa-solid fa-boxes-packing"></i></li>
-                    <li>Resturants <i className="fa-solid fa-list"></i></li>
-                    <li>Customer <i className="fa-solid fa-user"></i></li>
-                    <li>Edit <i className="fa-solid fa-pen-to-square"></i></li>
-                    <li>Reports <i className="fa-solid fa-square-poll-vertical"></i></li>
-                    <li>Settings <i className="fa-solid fa-gear"></i></li>
-                </ul>
-                <button id="close" onClick={handleSideNav}>close <i className="ri-logout-box-line"></i></button>
-            </div>
             <div className="dashboard">
                 <div className="box1">
                     <div className="image">
@@ -192,10 +180,11 @@ const myChart1 = new Chart(ctx1, config1);
                         <details className="showDetails" id="showDetails1">
                             <summary>
                                 <div id="nameDe">
-                                    <h3>Shivam Kumar</h3>
+                                    <h3>Nilanjan Debnath</h3>
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
-                                        <button id="spanBtn" onClick={()=> handleDetails('showDetails1')}>Details</button>
+                                        <button id="spanBtn" onClick={() => handleDetails('showDetails1')}>Details</button>
+
                                     </div>
                                 </div>
                             </summary>
@@ -214,10 +203,11 @@ const myChart1 = new Chart(ctx1, config1);
                         <details className="showDetails" id="showDetails2">
                             <summary>
                                 <div id="nameDe">
-                                    <h3>Shivam Kumar</h3>
+                                    <h3>Nilanjan Debnath</h3>
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
-                                        <button id="spanBtn" onClick={()=> handleDetails('showDetails2')}>Details</button>
+                                        <button id="spanBtn" onClick={() => handleDetails('showDetails2')}>Details</button>
+
                                     </div>
                                 </div>
                             </summary>
@@ -236,10 +226,11 @@ const myChart1 = new Chart(ctx1, config1);
                         <details className="showDetails" id="showDetails3">
                             <summary>
                                 <div id="nameDe">
-                                    <h3>Shivam Kumar</h3>
+                                    <h3>Nilanjan Debnath</h3>
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
-                                        <button id="spanBtn" onClick={()=> handleDetails('showDetails3')}>Details</button>
+                                        <button id="spanBtn" onClick={() => handleDetails('showDetails3')}>Details</button>
+
                                     </div>
                                 </div>
                             </summary>
@@ -258,10 +249,10 @@ const myChart1 = new Chart(ctx1, config1);
                         <details className="showDetails" id="showDetails4">
                             <summary>
                                 <div id="nameDe">
-                                    <h3>Shivam Kumar</h3>
+                                    <h3>Nilanjan Debnath</h3>
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
-                                        <button id="spanBtn" onClick={()=> handleDetails('showDetails4')}>Details</button>
+                                        <button id="spanBtn" onClick={() => handleDetails('showDetails4')}>Details</button>
                                     </div>
                                 </div>
                             </summary>
@@ -295,6 +286,44 @@ const myChart1 = new Chart(ctx1, config1);
                         <div className="count">
                             <h3>Total Money Donation Request</h3><h1>85</h1>
                         </div>
+                    </div>
+                    <div className="details">
+                        <details className="showDetails" id="payDetails1">
+                            <summary>
+                                <div id="nameDe">
+                                    <h3>Nilanjan Debnath</h3>
+                                    <div id="btnBox">
+                                        <button id="spanBtn" onClick={() => handleDetails('payDetails1')}>&#8377;10000</button>
+                                    </div>
+                                </div>
+                            </summary>
+                            <p>
+                                <div className="row">
+                                    <strong>Date:</strong>
+                                    <h3>06 /02 /2024</h3>
+                                    <strong>Time:</strong>
+                                    <h3>07.28 PM</h3>
+                                </div>
+                            </p>
+                        </details>
+                        <details className="showDetails" id="payDetails2">
+                            <summary>
+                                <div id="nameDe">
+                                    <h3>Nilanjan Debnath</h3>
+                                    <div id="btnBox">
+                                        <button id="spanBtn" onClick={() => handleDetails('payDetails2')}>&#8377;10000</button>
+                                    </div>
+                                </div>
+                            </summary>
+                            <p>
+                                <div className="row">
+                                    <strong>Date:</strong>
+                                    <h3>06 /02 /2024</h3>
+                                    <strong>Time:</strong>
+                                    <h3>07.28 PM</h3>
+                                </div>
+                            </p>
+                        </details>
                     </div>
                 </div>
             </div>
