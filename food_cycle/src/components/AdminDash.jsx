@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 import "../../public/styleSheets/admin.css";
 import profileImg from "../../public/images/profile.jpg"
 
+
+function handleDetails(id) {
+    document.getElementById(id).open = !document.getElementById(id).open;
+};
+
 function handleDetails(id) {
     document.getElementById(id).open = !document.getElementById(id).open;
 };
 
 function AdminDashBoard() {
+
 
     useEffect(() => {
         const initCharts = () => {
@@ -100,6 +106,7 @@ function AdminDashBoard() {
             };
 
             const myChart1 = new Chart(ctx1, config1);
+
         };
 
         initCharts();
@@ -177,6 +184,7 @@ function AdminDashBoard() {
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
                                         <button id="spanBtn" onClick={() => handleDetails('showDetails1')}>Details</button>
+
                                     </div>
                                 </div>
                             </summary>
@@ -199,6 +207,7 @@ function AdminDashBoard() {
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
                                         <button id="spanBtn" onClick={() => handleDetails('showDetails2')}>Details</button>
+
                                     </div>
                                 </div>
                             </summary>
@@ -221,6 +230,7 @@ function AdminDashBoard() {
                                     <div id="btnBox">
                                         <h3>for 5 people</h3>
                                         <button id="spanBtn" onClick={() => handleDetails('showDetails3')}>Details</button>
+
                                     </div>
                                 </div>
                             </summary>
