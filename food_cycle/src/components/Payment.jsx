@@ -9,7 +9,7 @@ function Payments() {
       </center>
       <div
         className={`card ${styles.pay_container}`}
-        style={{ width: "50rem" }}
+        style={{ width: "50rem", height: "35rem" }}
       >
         <div class="card-body">
           <form>
@@ -61,6 +61,32 @@ function Payments() {
                 id="cardNumber"
                 placeholder="Card Number"
               />
+            </div>
+            <div className={styles.personal1}>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  className={`form-control ${styles.personal1_child_1}`}
+                  id="expDate"
+                  placeholder="Expiration Date"
+                />
+              </div>
+              <div class={`mb-3 ${styles.div_2_3}`}>
+                <input
+                  type="text"
+                  className={`form-control ${styles.personal1_child_2_3}`}
+                  id="CVC"
+                  placeholder="CVC"
+                />
+              </div>
+              <div class={`mb-3 ${styles.div_2_3}`}>
+                <input
+                  type="text"
+                  className={`form-control ${styles.personal1_child_2_3}`}
+                  id="ZIP"
+                  placeholder="ZIP"
+                />
+              </div>
             </div>
 
             <center>

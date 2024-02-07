@@ -1,5 +1,6 @@
 .pay_container{
   margin: auto;
+  margin-top: 80px;
 }
 .personal{
   display: flex;
@@ -19,4 +20,18 @@
 }
 .inp_cardno{
   border-radius: 15px 0px 15px 15px;
+}
+.personal1{
+  display: flex;
+}
+.personal1_child_1{
+  border-radius: 15px 0px 15px 15px; 
+  width:240px;
+}
+.div_2_3{
+  margin-left: 23px;
+}
+.personal1_child_2_3{
+  border-radius: 15px 0px 15px 15px; 
+  width: 240px;
 }
