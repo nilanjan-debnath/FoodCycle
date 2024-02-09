@@ -7,10 +7,6 @@ function handleDetails(id) {
     document.getElementById(id).open = !document.getElementById(id).open;
 };
 
-function handleDetails(id) {
-    document.getElementById(id).open = !document.getElementById(id).open;
-};
-
 function AdminDashBoard() {
 
 
