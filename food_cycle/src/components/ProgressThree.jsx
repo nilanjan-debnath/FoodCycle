@@ -24,7 +24,7 @@ function ProgressThree() {
             const data = {
                 labels: labels,
                 datasets: [{
-                    label: 'Food Donations',
+                    label: 'Enrolled Last Year',
                     data: [1210, 1530, 1721, 2230, 2687, 3050, 3511, 3250, 3511, 3655, 3930, 4120],
                     backgroundColor: [
                         '#211C6A',

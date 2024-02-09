@@ -31,6 +31,14 @@ function ProgressTwo() {
                         '#ED9ED6',
                         '#C683D7',
                         '#7071E8',
+                        '#B4B4B8',
+                        '#FC6736',
+                        '#6962AD',
+                        '#3C0753',
+                        '#FF9BD2',
+                        '#C6A969',
+                        '#FFB534',
+                        '#FDBF60',
                     ],
                     borderColor: [
                         'white',
@@ -48,7 +56,7 @@ function ProgressTwo() {
                             beginAtZero: true,
                             ticks: {
                                 callback: function (value, index, values) {
-                                    return value * 100 + '';
+                                    return value * 100 + '%';
                                 }
                             }
                         }

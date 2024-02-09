@@ -3,10 +3,22 @@ import styles from "./css/progress.module.css";
 import ProgressOne from "./ProgressOne";
 import ProgressThree from "./ProgressThree";
 import ProgressTwo from "./ProgressTwo";
+import Logo from "../../public/images/logo.png";
+import Background from "../../public/images/one.png"
 
 function Progress() {
     return (
         <>
+            <div className={`${styles.navbar}`}>
+                <img id={`${styles.logo}`} src={Logo} alt="" />
+                <div className={`${styles.logoText}`}>
+                <h1>FoodCycle</h1>
+                <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div className="donate">
+                <img className={`${styles.image}`} src={Background} alt="" />
+            </div>
             <div className={`${styles.top}`}>
                 <h1 className={`${styles.heading}`}>We have been here for you since 2023</h1>
                 <p className={`${styles.p}`}>Our operation allows us to help up to 200 meals donation per day! A well-established system comprising
