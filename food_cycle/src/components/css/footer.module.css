@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #31b9f6;
+}
+
+.box {
+    padding: 1rem;
+}
+
+.box ul {
+    list-style: none;
+    text-align: center;
+}
+
+.box ul li {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    cursor: pointer;
+    color: #f3e5e5;
+    font-weight: bold;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: #f3e5e5;
+    transition: 0.5s;
+}
+
+.box ul li a:hover {
+    color: white;
+}
+
+.box:last-child ul li {
+    color: white;
+}
+
+.box:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#footerLogo {
+    width: 7rem;
+}
+
+#footerHead {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}

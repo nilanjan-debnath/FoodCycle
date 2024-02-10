@@ -7,38 +7,18 @@ function ProgressTwo() {
             const ctx = document.getElementById("barchart2").getContext('2d');
 
             const labels = [
-                'January',
-                'February',
-                'March',
-                'April',
-                'May',
-                'June',
-                'July',
-                'August',
-                'September',
-                'October',
-                'November',
-                'December'
+                'Resturant',
+               'People'
             ];
 
             const data = {
                 labels: labels,
                 datasets: [{
                     label: 'Food Donations',
-                    data: [1210, 1530, 1721, 2230, 2687, 3050, 3511, 3250, 3511, 3655, 3930, 4120],
+                    data: [60, 40],
                     backgroundColor: [
-                        '#FFC7C7',
-                        '#ED9ED6',
-                        '#C683D7',
-                        '#7071E8',
-                        '#B4B4B8',
-                        '#FC6736',
-                        '#6962AD',
-                        '#3C0753',
-                        '#FF9BD2',
-                        '#C6A969',
-                        '#FFB534',
-                        '#FDBF60',
+                        '#211C6A',
+                        '#ED9ED6'
                     ],
                     borderColor: [
                         'white',
