@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    width: 100%;
+    height: 16rem;
+    background: #31b9f6;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topBoxData {
+    padding-left: 2rem;
+}
+
+.top .heading {
+    font-size: 4.2rem;
+    color: white;
+}
+
+p {
+    width: 70%;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+.textWhite{
+    color: rgb(131, 248, 248);
+}
+
+.topBoxText {
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+    justify-content: space-around;
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.topBoxText .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topBoxText .col h3 {
+    color: #31b9f6;
+    font-size: 2.2rem;
+}
+
+.middle {
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.middle .one,
+.middle .three {
+    display: flex;
+}
+
+.middle .two {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.middle .one .right,
+.middle .one .left,
+.middle .three .right,
+.middle .three .left,
+.middle .two .right,
+.middle .two .left {
+    padding: 1rem;
+    /* border: 1px solid black; */
+}
+
+.middle .one .left,
+.middle .three .left,
+.middle .two .left {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0;
+    width: 40%;
+}
+
+.middle .one .right,
+.middle .three .right,
+.middle .two .right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.middle .two .right,
+.middle .two .left {
+    width: 50%;
+}
+
+#textHead {
+    color: #31b9f6;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#textContenet {
+    text-align: justify;
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chart {
+    width: 100%;
+}
+
+.barchart {
+    width: 100% !important;
+    height: 335px !important;
+}
+
+.chart2 {
+    display: flex;
+    justify-content: center;
+}
+
+.piechart {
+    width: 335px !important;
+    height: 335px !important;
+}
