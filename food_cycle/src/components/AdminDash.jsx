@@ -155,9 +155,8 @@ function AdminDashBoard() {
                     <h1>Donation Requests</h1>
                     <div className="topBox">
                         <div className="leftBox">
-                            <h3>Food Donation Requests</h3>
                             <div className="graph">
-                                <div className="chart">
+                                <div style={{width: "180px"}} className="chart">
                                     <canvas id="barchart"></canvas>
                                 </div>
                             </div>
@@ -267,10 +266,9 @@ function AdminDashBoard() {
                     </div>
                 </div>
                 <div className="box3">
-                    <h1>Money Donation Requests</h1>
+                    <h1>Money Donation</h1>
                     <div className="topBox">
                         <div className="leftBox">
-                            <h3>Money Donation Requests</h3>
                             <div className="graph">
                                 <div className="chart">
                                     <canvas id="barchart1"></canvas>
@@ -280,7 +278,7 @@ function AdminDashBoard() {
                     </div>
                     <div className="rightBox">
                         <div className="count">
-                            <h3>Total Money Donation Request</h3><h1>85</h1>
+                            <h3>Total Money Donation</h3><h1>85</h1>
                         </div>
                     </div>
                     <div className="details">
