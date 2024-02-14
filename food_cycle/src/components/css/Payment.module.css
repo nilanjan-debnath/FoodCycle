@@ -1,6 +1,25 @@
+.paymentPageContainer{
+  margin: 0px;
+  padding: 0px;
+   background: url("../../assets/paymentBackground.jpg"); 
+  height: 100vh;
+  width: 100%;
+  background-size: cover; 
+  background-position: center;
+  box-sizing: border-box;
+}
 .pay_container{
   margin: auto;
-  margin-top: 80px;
+  margin-top: 75px;
+  border-width: 2px;
+  flex-direction: column;
+  height: 83vh;
+  width: 30vw;
+  border-color: black;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(8.5px);
+  border-radius: 10px;
 }
 .personal{
   display: flex;
@@ -34,4 +53,23 @@
 .personal1_child_2_3{
   border-radius: 15px 0px 15px 15px; 
   width: 240px;
+}
+.payMethod{
+  display:flex;
+}
+.payTypeDiv{
+  width: 319px;
+}
+.payTypeInput{
+  width: 163px;
+}
+.payImg{
+  width: 65%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: darken;
+  margin-top: 19px;
+}
+.payImgContainer{
+  margin-left: 20px;
 }
