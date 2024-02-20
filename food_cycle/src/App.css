@@ -2,18 +2,48 @@
 /* to add style any file inside the components=> import '../app.css'; */
 nav{
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #7360DF,#C499F3, #F2AFEF, #33186B);
 }
+nav .image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+nav .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav .name{
+  width: 20%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+#name{
+  color: white;
+  font-size: 1.6rem;
+}
+
 nav ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  background: rgb(115, 199, 255);
+  /* background: rgb(115, 199, 255); */
   align-items: center;
   height: 3rem;
+  width: 60%;
 }
 nav ul li a{
   text-decoration: none;
   font-size: 1.2rem;
+  color: white;
+  font-weight: 550;
 }
 
 #menu, #cross{
@@ -34,4 +64,24 @@ nav{
   position: absolute;
   left: 0;
   transition: 0.5s;
+}
+#login{
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+#login a{
+  color: black;
+}
+#payment{
+  color: white;
+  background: red;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600; 
+  transition: 0.5s;
+}
+#payment:hover{
+  background: rgb(232, 70, 70);
 }
