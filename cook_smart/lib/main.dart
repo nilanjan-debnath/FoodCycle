@@ -1,6 +1,9 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 
 import 'package:cook_smart/pages/login.dart';
+import 'package:cook_smart/pages/navBar.dart';
 import 'package:cook_smart/pages/home.dart';
 import 'package:cook_smart/pages/profile.dart';
 import 'package:cook_smart/pages/remainder.dart';
@@ -11,9 +14,10 @@ import 'package:cook_smart/pages/donate.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: '/profile',
+    initialRoute: '/',
     routes: {
-      '/': (context) => Login(),
+      '/': (context) => navBar(),
+      '/login': (context) => Login(),
       '/home': (context) => Home(),
       '/profile': (context) => Profile(),
       '/remainder': (context) => Remainder(),
