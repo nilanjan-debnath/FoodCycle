@@ -15,29 +15,29 @@ class _ProfileState extends State<Profile> {
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_rounded,
             size: 30,
           ),
           onPressed: () async {},
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0,
       ),
       body: Align(
-        alignment: AlignmentDirectional(0, 0),
+        alignment: const AlignmentDirectional(0, 0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Container(
+            SizedBox(
               width: 140,
               child: Stack(
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0, 0),
+                    alignment: const AlignmentDirectional(0, 0),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                       child: Container(
                         width: 100,
                         height: 100,
@@ -46,7 +46,7 @@ class _ProfileState extends State<Profile> {
                           shape: BoxShape.circle,
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(2),
+                          padding: const EdgeInsets.all(2),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(50),
                             child: Image.network(
@@ -98,7 +98,7 @@ class _ProfileState extends State<Profile> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 12),
+              padding: const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 12),
               child: Text(
                 'David Jerome',
                 textAlign: TextAlign.center,
@@ -108,7 +108,7 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
             ),
-            Text(
+            const Text(
               'David.j@gmail.com',
               style: TextStyle(
                 fontFamily: 'Readex Pro',
@@ -116,7 +116,7 @@ class _ProfileState extends State<Profile> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 24, 16, 32),
+              padding: const EdgeInsetsDirectional.fromSTEB(16, 24, 16, 32),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -126,7 +126,7 @@ class _ProfileState extends State<Profile> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                           child: Container(
                             width: 44,
                             height: 44,
@@ -134,16 +134,16 @@ class _ProfileState extends State<Profile> {
                               color: Theme.of(context).colorScheme.background,
                               shape: BoxShape.circle,
                             ),
-                            alignment: AlignmentDirectional(0, 0),
+                            alignment: const AlignmentDirectional(0, 0),
                             child: Icon(
-                              Icons.work_outline,
+                              Icons.location_on,
                               color: Theme.of(context).colorScheme.primary,
                               size: 24,
                             ),
                           ),
                         ),
                         Text(
-                          'Passenger Documents',
+                          'Address',
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.titleSmall,
                         ),
@@ -152,13 +152,13 @@ class _ProfileState extends State<Profile> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+                                const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                             child: Container(
                               width: 44,
                               height: 44,
@@ -166,7 +166,7 @@ class _ProfileState extends State<Profile> {
                                 color: Theme.of(context).colorScheme.background,
                                 shape: BoxShape.circle,
                               ),
-                              alignment: AlignmentDirectional(0, 0),
+                              alignment: const AlignmentDirectional(0, 0),
                               child: Icon(
                                 Icons.notifications_outlined,
                                 color: Theme.of(context).colorScheme.primary,
@@ -188,7 +188,7 @@ class _ProfileState extends State<Profile> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                           child: Container(
                             width: 44,
                             height: 44,
@@ -196,7 +196,7 @@ class _ProfileState extends State<Profile> {
                               color: Theme.of(context).colorScheme.background,
                               shape: BoxShape.circle,
                             ),
-                            alignment: AlignmentDirectional(0, 0),
+                            alignment: const AlignmentDirectional(0, 0),
                             child: Icon(
                               Icons.help_outline_outlined,
                               color: Theme.of(context).colorScheme.primary,
@@ -221,14 +221,14 @@ class _ProfileState extends State<Profile> {
                 height: 400,
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.background,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 3,
                       color: Color(0x33000000),
                       offset: Offset(0, -1),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0),
                     bottomRight: Radius.circular(0),
                     topLeft: Radius.circular(16),
@@ -241,14 +241,14 @@ class _ProfileState extends State<Profile> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 16, 16, 0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(16, 16, 16, 0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                               child: Text(
                                 'Settings',
                                 style:
@@ -257,13 +257,13 @@ class _ProfileState extends State<Profile> {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0, 8, 16, 8),
                                     child: Icon(
                                       Icons.work_outline,
@@ -275,7 +275,7 @@ class _ProfileState extends State<Profile> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Text(
                                         'Phone Number',
@@ -300,13 +300,13 @@ class _ProfileState extends State<Profile> {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0, 8, 16, 8),
                                     child: Icon(
                                       Icons.language_rounded,
@@ -318,7 +318,7 @@ class _ProfileState extends State<Profile> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Text(
                                         'Language',
@@ -343,13 +343,13 @@ class _ProfileState extends State<Profile> {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0, 8, 16, 8),
                                     child: Icon(
                                       Icons.money_rounded,
@@ -361,7 +361,7 @@ class _ProfileState extends State<Profile> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Text(
                                         'Currency',
@@ -386,13 +386,13 @@ class _ProfileState extends State<Profile> {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0, 8, 16, 8),
                                     child: Icon(
                                       Icons.edit,
@@ -404,7 +404,7 @@ class _ProfileState extends State<Profile> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Text(
                                         'Profile Settings',
@@ -429,13 +429,13 @@ class _ProfileState extends State<Profile> {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0, 8, 16, 8),
                                     child: Icon(
                                       Icons.notifications_active,
@@ -447,7 +447,7 @@ class _ProfileState extends State<Profile> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Text(
                                         'Notification Settings',
@@ -469,13 +469,13 @@ class _ProfileState extends State<Profile> {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0, 8, 16, 8),
                                     child: Icon(
                                       Icons.login_rounded,
@@ -487,7 +487,7 @@ class _ProfileState extends State<Profile> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Text(
                                         'Log out of account',

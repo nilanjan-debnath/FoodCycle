@@ -13,13 +13,13 @@ class _RemainderState extends State<Remainder> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        actions: [],
+        actions: const [],
         backgroundColor: Colors.white,
         title: Text(
           'Remainders',
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-        centerTitle: true,
+        centerTitle: false,
         elevation: 0,
       ),
       body: SafeArea(
@@ -29,7 +29,7 @@ class _RemainderState extends State<Remainder> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
               child: Text(
                 'Below are the details of your remainders.',
                 style: Theme.of(context).textTheme.labelMedium,
@@ -40,7 +40,7 @@ class _RemainderState extends State<Remainder> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16, 16, 0, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16, 16, 0, 0),
                   child: Text(
                     'Today',
                     style: Theme.of(context).textTheme.labelMedium,
@@ -52,12 +52,13 @@ class _RemainderState extends State<Remainder> {
                   scrollDirection: Axis.vertical,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.amber,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
                               color: Color(0x33000000),
@@ -67,22 +68,13 @@ class _RemainderState extends State<Remainder> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
-                                  width: 44,
-                                  height: 44,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -91,14 +83,14 @@ class _RemainderState extends State<Remainder> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'ScreenStudio App',
+                                        'Apples',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyLarge,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Added on: May, 4th 2023',
                                           style: Theme.of(context)
@@ -115,13 +107,14 @@ class _RemainderState extends State<Remainder> {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '\$24.99',
+                                    '20 pieces',
                                     style:
                                         Theme.of(context).textTheme.bodyLarge,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 8, 0, 0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0, 8, 0, 0),
                                     child: Container(
                                       height: 32,
                                       decoration: BoxDecoration(
@@ -134,7 +127,7 @@ class _RemainderState extends State<Remainder> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment: AlignmentDirectional(0, 0),
                                         child: Padding(
                                           padding:
@@ -153,12 +146,13 @@ class _RemainderState extends State<Remainder> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.onSecondary,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
                               color: Color(0x33000000),
@@ -168,22 +162,13 @@ class _RemainderState extends State<Remainder> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  'https://cdn.mos.cms.futurecdn.net/SDDw7CnuoUGax6x9mTo7dd.jpg',
-                                  width: 44,
-                                  height: 44,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -192,14 +177,14 @@ class _RemainderState extends State<Remainder> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Slack Ltd',
+                                        'Bananas',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyLarge,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Added on: May, 4th 2023',
                                           style: Theme.of(context)
@@ -216,13 +201,14 @@ class _RemainderState extends State<Remainder> {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '\$24.99',
+                                    '24 pieces',
                                     style:
                                         Theme.of(context).textTheme.bodyLarge,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 8, 0, 0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0, 8, 0, 0),
                                     child: Container(
                                       height: 32,
                                       decoration: BoxDecoration(
@@ -235,7 +221,7 @@ class _RemainderState extends State<Remainder> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment: AlignmentDirectional(0, 0),
                                         child: Padding(
                                           padding:
@@ -256,7 +242,7 @@ class _RemainderState extends State<Remainder> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16, 16, 0, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16, 16, 0, 0),
                   child: Text(
                     'Earlier items',
                     style: Theme.of(context).textTheme.labelMedium,
@@ -268,12 +254,13 @@ class _RemainderState extends State<Remainder> {
                   scrollDirection: Axis.vertical,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.onSecondary,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
                               color: Color(0x33000000),
@@ -283,22 +270,13 @@ class _RemainderState extends State<Remainder> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  'https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png',
-                                  width: 44,
-                                  height: 44,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -307,14 +285,14 @@ class _RemainderState extends State<Remainder> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Dribbble LTD.',
+                                        'Rice',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyLarge,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Added on: May, 4th 2023',
                                           style: Theme.of(context)
@@ -331,13 +309,14 @@ class _RemainderState extends State<Remainder> {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '\$500.00',
+                                    '10 KG',
                                     style:
                                         Theme.of(context).textTheme.bodyLarge,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 8, 0, 0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0, 8, 0, 0),
                                     child: Container(
                                       height: 32,
                                       decoration: BoxDecoration(
@@ -350,7 +329,7 @@ class _RemainderState extends State<Remainder> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment: AlignmentDirectional(0, 0),
                                         child: Padding(
                                           padding:
@@ -369,12 +348,13 @@ class _RemainderState extends State<Remainder> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.background,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
                               color: Color(0x33000000),
@@ -384,22 +364,13 @@ class _RemainderState extends State<Remainder> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  'https://app.flutterflow.io/icons/ff-icon-192.png',
-                                  width: 44,
-                                  height: 44,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -408,14 +379,14 @@ class _RemainderState extends State<Remainder> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'FlutterFlow',
+                                        'Potatoes',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyLarge,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Added on: May, 4th 2023',
                                           style: Theme.of(context)
@@ -432,13 +403,14 @@ class _RemainderState extends State<Remainder> {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '\$500.00',
+                                    '3 KG',
                                     style:
                                         Theme.of(context).textTheme.bodyLarge,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 8, 0, 0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0, 8, 0, 0),
                                     child: Container(
                                       height: 32,
                                       decoration: BoxDecoration(
@@ -451,7 +423,7 @@ class _RemainderState extends State<Remainder> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment: AlignmentDirectional(0, 0),
                                         child: Padding(
                                           padding:
@@ -470,12 +442,13 @@ class _RemainderState extends State<Remainder> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.onSecondary,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
                               color: Color(0x33000000),
@@ -485,22 +458,13 @@ class _RemainderState extends State<Remainder> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
-                                  width: 44,
-                                  height: 44,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -509,14 +473,14 @@ class _RemainderState extends State<Remainder> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'ScreenStudio App',
+                                        'Tomatoes',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyLarge,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Added on: May, 4th 2023',
                                           style: Theme.of(context)
@@ -533,13 +497,14 @@ class _RemainderState extends State<Remainder> {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '\$24.99',
+                                    '1.5 KG',
                                     style:
                                         Theme.of(context).textTheme.bodyLarge,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 8, 0, 0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0, 8, 0, 0),
                                     child: Container(
                                       height: 32,
                                       decoration: BoxDecoration(
@@ -552,7 +517,7 @@ class _RemainderState extends State<Remainder> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment: AlignmentDirectional(0, 0),
                                         child: Padding(
                                           padding:
@@ -571,12 +536,13 @@ class _RemainderState extends State<Remainder> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.background,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
                               color: Color(0x33000000),
@@ -586,22 +552,13 @@ class _RemainderState extends State<Remainder> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  'https://cdn.mos.cms.futurecdn.net/SDDw7CnuoUGax6x9mTo7dd.jpg',
-                                  width: 44,
-                                  height: 44,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -610,14 +567,14 @@ class _RemainderState extends State<Remainder> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Slack Ltd',
+                                        'Eggs',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyLarge,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Added on: May, 4th 2023',
                                           style: Theme.of(context)
@@ -634,13 +591,14 @@ class _RemainderState extends State<Remainder> {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '\$24.99',
+                                    '12 pieces',
                                     style:
                                         Theme.of(context).textTheme.bodyLarge,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 8, 0, 0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0, 8, 0, 0),
                                     child: Container(
                                       height: 32,
                                       decoration: BoxDecoration(
@@ -653,7 +611,7 @@ class _RemainderState extends State<Remainder> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment: AlignmentDirectional(0, 0),
                                         child: Padding(
                                           padding:
