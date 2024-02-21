@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./css/home.module.css";
 import FoodImage from "../../public/images/food.png";
+import HandPhone from "../../public/images/phone hand.png";
+import PhoneTabs from "../../public/images/tabs.png";
+import FoodDonation from "../../public/images/foodDonation.png";
+import Footer from "./footer";
 
 function Home() {
     return (
@@ -31,32 +35,53 @@ function Home() {
                         <p>Ready to be a part of something meaningful? Join our community today and help us make a difference, one meal at a time. Visit our app to learn more about how you can get involved and start making a positive impact in your community.</p>
                     </div>
                     <div className={`${styles.right}`}>
-                        <img src="https://www.shutterstock.com/shutterstock/photos/2377762257/display_1500/stock-vector-join-our-community-vector-illustration-for-referral-program-2377762257.jpg" alt="" />
+                        <div className={`${styles.rightOne}`}></div>
+                        <div className={`${styles.rightTwo}`}></div>
+                        <img src={FoodDonation} alt="" />
                     </div>
                 </div>
                 <div className={`${styles.row}`}>
                     <div className={`${styles.right}`}>
-                        <img src="https://www.shutterstock.com/shutterstock/photos/2377762257/display_1500/stock-vector-join-our-community-vector-illustration-for-referral-program-2377762257.jpg" alt="" />
+                        <img src={HandPhone} alt="" />
                     </div>
                     <div className={`${styles.left}`}>
                         <h1>Help Your Self and Help Others</h1>
-                        <p>At [Your Project Name], we believe in the power of mutual support and collective action. Our mission is simple: to create a platform where you can help yourself while making a positive impact on the lives of others.</p>
+                        <p>At <span style={{ color: "blue" }}>FoodCycle</span>, we believe in the power of mutual support and collective action. Our mission is simple: to create a platform where you can help yourself while making a positive impact on the lives of others.</p>
                         <p>When you contribute to our project, you're not just helping others; you're also helping yourself. By participating in our initiatives, whether through food donations, volunteering, or advocacy, you become part of something greater than yourself. You experience the fulfillment that comes from knowing you've made a difference in someone else's life.</p>
-                        <p>At [Your Project Name], we believe in creating win-win situations. By participating in our project, you not only help those in need but also enrich your own life in the process. Whether you're a business looking to donate surplus food or an individual seeking to lend a helping hand, together, we can make a difference.</p>
+                        <p>At <span style={{ color: "blue" }}>FoodCycle</span>, we believe in creating win-win situations. By participating in our project, you not only help those in need but also enrich your own life in the process. Whether you're a business looking to donate surplus food or an individual seeking to lend a helping hand, together, we can make a difference.</p>
+                        <div className={`${styles.btn}`}>
+                            <button id={`${styles.button}`}>
+                            <i class="fa-brands fa-apple"></i>
+                                <div>
+                                    <p>Download on the</p>
+                                    <h3>App Store</h3>
+                                </div>
+                            </button>
+                            <button id={`${styles.button}`}>
+                            <i class="fa-brands fa-google-play" style={{fontSize: "1.7rem"}}></i>
+                                <div>
+                                    <p>Get it On</p>
+                                    <h3>Google Play</h3>
+                                </div>
+                            </button>
+                        </div>
+                        <div id={`${styles.help}`}></div>
                     </div>
                 </div>
                 <div className={`${styles.row}`}>
                     <div className={`${styles.left}`}>
+                        <div id={`${styles.lastDiv}`}></div>
                         <h1>We are for Everyone</h1>
-                        <p>At [Your Project Name], inclusivity is at the heart of everything we do. We believe that everyone has the power to make a difference, regardless of background, identity, or circumstance. Our project is built on the principle that when we come together as a diverse and inclusive community, we can create positive change that benefits everyone.</p>
+                        <p>At <span style={{ color: "blue" }}>FoodCycle</span>, inclusivity is at the heart of everything we do. We believe that everyone has the power to make a difference, regardless of background, identity, or circumstance. Our project is built on the principle that when we come together as a diverse and inclusive community, we can create positive change that benefits everyone.</p>
                         <p>Our doors are open to all who share our commitment to making the world a better place. Whether you're a business owner, a community leader, a student, or someone who simply cares about making a difference, you are welcome here. Together, we can harness the power of our diversity to tackle some of the most pressing challenges facing our communities.</p>
                         <p>No matter who you are or where you come from, there's a place for you in our community. Join us in our mission to create a more just, equitable, and compassionate world for all. Together, let's build a future where everyone has the opportunity to thrive.</p>
                     </div>
                     <div className={`${styles.right}`}>
-                        <img src="https://www.shutterstock.com/shutterstock/photos/2377762257/display_1500/stock-vector-join-our-community-vector-illustration-for-referral-program-2377762257.jpg" alt="" />
+                        <img src={PhoneTabs} alt="" />
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

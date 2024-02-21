@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Link, Routes, useLocation } from 'react-router-dom';
 
 import Activities from './Activities';
 import Payments from './Payment';
@@ -15,6 +15,17 @@ function Header() {
     function handleNav() {
         setNav(!nav);
     }
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setNav(true);
+        } else if(location.pathname === '/adminDas' || location.pathname === '/payment' || location.pathname === '/login'){
+            setNav(false)
+        }
+        else {
+            setNav(false);
+        }
+    }, [location]);
 
     return (
         <>
