@@ -214,7 +214,8 @@ class _HomeState extends State<Home> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 4, 8, 0),
                                       child: AutoSizeText(
-                                        'This vegetarian curry is incredibly thick and rich, thanks to ...',
+                                        'This vegetarian curry is incredibly thick and rich, thanks to cooked-down red lentils. For serving, spoon over rice or scoop up with flatbreads.',
+                                        overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
                                           fontFamily: 'Readex Pro',
@@ -319,7 +320,8 @@ class _HomeState extends State<Home> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 4, 8, 0),
                                       child: AutoSizeText(
-                                        'A leavened flatbread, naan completes any Indian meal. Use it for sopping up sauces, drizzle ...',
+                                        'A leavened flatbread, naan completes any Indian meal. Use it for sopping up sauces, drizzle with chutney, or just eat as-is.',
+                                        overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
                                           fontFamily: 'Readex Pro',
@@ -425,7 +427,8 @@ class _HomeState extends State<Home> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 4, 8, 0),
                                       child: AutoSizeText(
-                                        'This creamy curry sauce is perfect for cooking chicken in until its fall-apart tender. "I used this ...',
+                                        'This creamy curry sauce is perfect for cooking chicken in until its fall-apart tender. "I used this recipe when I made curry myself for the first time ever," says Nadia Orawski. "I loved it!"',
+                                        overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
                                           fontFamily: 'Readex Pro',
@@ -524,7 +527,8 @@ class _HomeState extends State<Home> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0, 4, 8, 0),
                                     child: AutoSizeText(
-                                      "The ultimate decadent curry, murgh makhani relies on heavy cream and butter for its rich texture. It's ...",
+                                      "The ultimate decadent curry, murgh makhani relies on heavy cream and butter for its rich texture. It's extra saucy, so be sure to serve it with a side of naan, rice, or both to soak up the sauce.",
+                                      overflow: TextOverflow.ellipsis,
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
                                         fontFamily: 'Readex Pro',
