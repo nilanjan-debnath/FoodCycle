@@ -6,13 +6,13 @@
 
 .top {
     width: 100%;
-    height: 18rem;
+    height: 19rem;
     background: #31b9f6;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
     gap: 1rem;
 }
 
