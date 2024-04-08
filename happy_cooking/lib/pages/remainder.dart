@@ -47,10 +47,10 @@ class _RemainderState extends State<Remainder> {
                       style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ),
-                  ListView(
-                    padding: EdgeInsets.zero,
-                    shrinkWrap: true,
-                    scrollDirection: Axis.vertical,
+                  Column(
+                    // padding: EdgeInsets.zero,
+                    // shrinkWrap: true,
+                    // scrollDirection: Axis.vertical,
                     children: [
                       Padding(
                         padding:
@@ -255,10 +255,10 @@ class _RemainderState extends State<Remainder> {
                       style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ),
-                  ListView(
-                    padding: EdgeInsets.zero,
-                    shrinkWrap: true,
-                    scrollDirection: Axis.vertical,
+                  Column(
+                    // padding: EdgeInsets.zero,
+                    // shrinkWrap: true,
+                    // scrollDirection: Axis.vertical,
                     children: [
                       Padding(
                         padding:

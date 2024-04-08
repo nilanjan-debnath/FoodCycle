@@ -9,6 +9,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final pink = const Color(0xFFFACCCC);
+  final grey = const Color(0xFFF2F2F7);
+  OutlineInputBorder _border(Color color) => OutlineInputBorder(
+        borderSide: BorderSide(width: 0.5, color: color),
+        borderRadius: BorderRadius.circular(12),
+      );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,11 +22,12 @@ class _HomeState extends State<Home> {
         backgroundColor: Theme.of(context).colorScheme.background,
         automaticallyImplyLeading: false,
         title: Text(
-          'Home',
+          'HappyCooking',
           style: TextStyle(
             fontFamily: 'Outfit',
             color: Theme.of(context).colorScheme.onBackground,
-            fontSize: 22,
+            fontSize: 30,
+            fontWeight: FontWeight.w600,
           ),
         ),
         centerTitle: false,
@@ -31,6 +38,29 @@ class _HomeState extends State<Home> {
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(15, 5, 15, 5),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width - 32,
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: grey,
+                    focusColor: pink,
+                    focusedBorder: _border(pink),
+                    border: _border(grey),
+                    enabledBorder: _border(grey),
+                    hintText: 'Start recipe search of your liking',
+                    contentPadding: const EdgeInsets.symmetric(vertical: 20),
+                    prefixIcon: const Icon(
+                      Icons.search,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  onFieldSubmitted: (value) {},
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
               child: Container(
